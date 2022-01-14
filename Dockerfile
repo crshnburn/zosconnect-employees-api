@@ -1,4 +1,4 @@
-FROM ibm-zcon-server:beta
+FROM uk.icr.io/vnext/ibm-zcon-server:beta
 
 # customise server.xml via dropins
 COPY --chown=1001:0 src/main/liberty/config /config/configDropins/defaults
