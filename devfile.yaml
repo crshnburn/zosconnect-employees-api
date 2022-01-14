@@ -1,13 +1,12 @@
 apiVersion: 1.0.0
 metadata:
-  name: sample-db2-api
+  name: employees-api
 projects:
   - name: employees-api
     source:
-      location: 'https://github.com/zosconnect/sample-db2-api.git'
+      location: 'https://github.com/crshnburn/zosconnect-employees-api.git'
       type: github
       branch: main
-      sparseCheckoutDir: finish
 components:
   - mountSources: true
     endpoints:
@@ -20,11 +19,11 @@ components:
         port: 9080
     env:
       - name: ZCON_DESIGNER_PROJECT
-        value: /projects/employees-api/finish
+        value: /projects/employees-api/
       - name: DB2_HOST
         value: my.zos.db2.server
       - name: DB2_PORT
-        value: '3000'
+        value: '80'
     memoryLimit: 4927M
     type: dockerimage
     image: 'icr.io/zosconnect/ibm-zcon-designer:beta'

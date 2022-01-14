@@ -1,0 +1,7 @@
+bin/
+build/
+src/gen/
+src/main/webapp/
+.gradle/
+.openapi-generator
+.vscode/
