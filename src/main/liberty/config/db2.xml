@@ -6,5 +6,5 @@
 
     <mpMetrics authentication="false" />
 
-    <zosconnect_db2connection id="employeesAPIConnection" host="${db2.host}" port="${db2.port}"/>
+    <zosconnect_db2connection id="db2conn" host="${db2.host}" port="${db2.port}"/>
 </server>
