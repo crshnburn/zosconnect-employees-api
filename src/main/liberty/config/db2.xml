@@ -4,5 +4,7 @@
         <feature>zosconnect:db2-1.0</feature>
     </featureManager>
 
+    <mpMetrics authentication="false" />
+
     <zosconnect_db2connection id="employeesAPIConnection" host="${db2.host}" port="${db2.port}"/>
 </server>
